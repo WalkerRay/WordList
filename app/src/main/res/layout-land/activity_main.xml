@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wordlist.com.example.wordslist.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="1"
+            >
+            <EditText
+                android:id="@+id/search"
+                android:layout_columnSpan="1"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:hint="请输入查询的文本"
+                android:textSize="35dp"
+                android:layout_gravity="fill"
+                >
+            </EditText>
+            <Button
+                android:id="@+id/searchTo"
+                android:text="查询"
+                android:textSize="30dp"
+                android:layout_height="match_parent"
+                android:layout_columnSpan="1"
+                />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:columnCount="3"
+            android:rowCount="1"
+            tools:ignore="MissingConstraints">
+            <Button
+                android:id="@+id/WordList"
+                android:text="单词表"
+                android:textSize="20dp"
+                android:layout_height="60dp"
+                android:layout_columnSpan="1"
+                android:layout_width="200dp"
+                />
+            <Button
+                android:id="@+id/RandomTest"
+                android:text="随机测试"
+                android:textSize="20dp"
+                android:layout_height="60dp"
+                android:layout_columnSpan="1"
+                android:layout_gravity="fill"
+
+                />
+            <Button
+                android:id="@+id/NotRemember"
+                android:text="生词表"
+                android:textSize="20dp"
+                android:layout_height="60dp"
+                android:layout_columnSpan="1"
+                android:layout_width="200dp"
+                />
+        </GridLayout>
+
+    </LinearLayout>
+
+    <!--<ListView>-->
+        <!---->
+    <!--</ListView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

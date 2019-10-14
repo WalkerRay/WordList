@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wordslist.MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:rowCount="1"
+            >
+            <SearchView
+                android:id="@+id/search"
+                android:layout_columnSpan="1"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:queryHint="请输入查询内容"
+                android:iconifiedByDefault="false"
+                android:layout_gravity="fill"
+                >
+            </SearchView>
+            <ListView android:id="@+id/searchList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:columnCount="3"
+            android:rowCount="1"
+            tools:ignore="MissingConstraints">
+            <Button
+                android:id="@+id/WordList"
+                android:text="单词表"
+                android:textSize="20dp"
+                android:layout_height="60dp"
+                android:layout_columnSpan="1"
+                />
+            <Button
+                android:id="@+id/RandomTest"
+                android:text="随机测试"
+                android:textSize="20dp"
+                android:layout_height="60dp"
+                android:layout_columnSpan="1"
+                android:layout_gravity="fill"
+                />
+            <Button
+                android:id="@+id/NotRemember"
+                android:text="生词表"
+                android:textSize="20dp"
+                android:layout_height="60dp"
+                android:layout_columnSpan="1"
+                />
+        </GridLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/item_news"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="今日推荐"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/item_collection"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="我的收藏"
+            android:textSize="15dp"/>
+
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/newsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!--<ListView>-->
+        <!---->
+    <!--</ListView>-->
+
+</LinearLayout>
