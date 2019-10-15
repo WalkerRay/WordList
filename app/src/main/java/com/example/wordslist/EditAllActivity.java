@@ -54,7 +54,6 @@ public class EditAllActivity extends AppCompatActivity {
             dbHelper = new MyDatabaseHelper(EditAllActivity.this, "WordList.db", null, 2);
             SQLiteDatabase db = dbHelper.getWritableDatabase();
             if(word.getText().toString() != null && translation.getText().toString() != null) {
-                System.out.println("word is not empty");
                 String[] selectionArgs = {word.getText().toString()};
 
                 //用于改变的单词数据（即新的）

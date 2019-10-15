@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         dbHelper = new MyDatabaseHelper(this, "WordList.db", null, 2);
         final SQLiteDatabase db = dbHelper.getWritableDatabase();
+//        db.execSQL("delete from AllWords where word = ?", new String[]{""});
 //        ContentValues values = new ContentValues();
 //        values.put("title", "Xi says no force can ever undermine China's status");
 //        values.put("address", "http://english.cctv.com/2019/10/02/ARTI9fCIRS3sE4RVj5T3BauB191002.shtml?spm=C69523.P89571092934.E19742616158.1");
@@ -100,7 +101,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button notremember = findViewById(R.id.NotRemember);
         notremember.setOnClickListener(new NotRemember());
 
-        //
+        //跳转至单词添加
+        Button addword = findViewById(R.id.AddWord);
+        addword.setOnClickListener(new AddWord());
+
+        //查询单词
         wordSearchView = findViewById(R.id.search);
         wordSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener()
         {
@@ -193,7 +198,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
     }
 
-
+    class AddWord implements  View.OnClickListener{
+        @Override
+        public void onClick(View v){
+            Intent intent = new Intent(MainActivity.this, AddWordActivity.class);
+            startActivity(intent);
+        }
+    }
 
     class WordList implements View.OnClickListener {
         @Override

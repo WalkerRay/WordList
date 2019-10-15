@@ -46,7 +46,7 @@ public class ShowWordActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(ShowWordActivity.this, EditNewActivity.class);
+            Intent intent = new Intent(ShowWordActivity.this, EditAllActivity.class);
             intent.putExtra("word", word.getText().toString());
             intent.putExtra("translation", translation.getText().toString());
             intent.putExtra("example", example.getText().toString());
