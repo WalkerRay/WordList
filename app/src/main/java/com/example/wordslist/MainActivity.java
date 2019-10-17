@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         dbHelper = new MyDatabaseHelper(this, "WordList.db", null, 2);
         final SQLiteDatabase db = dbHelper.getWritableDatabase();
-//        db.execSQL("delete from AllWords where word = ?", new String[]{""});
+//        db.execSQL("delete from NewWords where word = ?", new String[]{""});
 //        ContentValues values = new ContentValues();
 //        values.put("title", "Xi says no force can ever undermine China's status");
 //        values.put("address", "http://english.cctv.com/2019/10/02/ARTI9fCIRS3sE4RVj5T3BauB191002.shtml?spm=C69523.P89571092934.E19742616158.1");

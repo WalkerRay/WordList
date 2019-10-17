@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+    <TextView
+        android:id="@+id/allrWord"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="40dp"
+        />
+    <TextView
+        android:id="@+id/allrTranslation"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:id="@+id/allrExample"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/allrExampleTran"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="25dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/allrEdit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:text="编辑"
+            android:textSize="30dp" />
+        <Button
+            android:id="@+id/allrMove"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="添加到生词表"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+    <TextView
+        android:id="@+id/newrWord"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="40dp"
+        />
+    <TextView
+        android:id="@+id/newrTranslation"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:id="@+id/newrExample"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/newrExampleTran"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="25dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/newrEdit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:text="编辑"
+            android:textSize="30dp" />
+        <Button
+            android:id="@+id/newrMove"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="移出生词表"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
