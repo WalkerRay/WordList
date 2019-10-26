@@ -12,8 +12,8 @@ import android.widget.ListView;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.wordlist.R;
 import com.example.wordslist.AllWordsActivity;
+import com.example.wordslist.R;
 
 import java.util.ArrayList;
 import java.util.List;

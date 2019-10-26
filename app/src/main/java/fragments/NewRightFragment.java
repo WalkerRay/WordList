@@ -10,7 +10,8 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.wordlist.R;
+import com.example.wordslist.R;
+
 
 public class NewRightFragment extends Fragment {
     private TextView word;

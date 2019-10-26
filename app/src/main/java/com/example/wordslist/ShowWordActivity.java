@@ -8,7 +8,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.wordlist.R;
 
 public class ShowWordActivity extends AppCompatActivity {
 

@@ -21,7 +21,6 @@ import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.wordlist.R;
 import com.facebook.stetho.Stetho;
 import com.facebook.stetho.common.LogUtil;
 

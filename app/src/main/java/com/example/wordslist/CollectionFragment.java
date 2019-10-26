@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 
-import com.example.wordlist.R;
 
 public class CollectionFragment extends Fragment {
     @Override

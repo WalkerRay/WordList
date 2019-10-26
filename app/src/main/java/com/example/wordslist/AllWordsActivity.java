@@ -22,7 +22,6 @@ import model.Words;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
-import com.example.wordlist.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +31,6 @@ import databace.MyDatabaseHelper;
 public class AllWordsActivity extends AppCompatActivity{
 
     private MyDatabaseHelper dbHelper;
-    private int listsize = 0;
     private ListView listView;
 
     private static TextView word;
@@ -60,26 +58,25 @@ public class AllWordsActivity extends AppCompatActivity{
             if (cursor.moveToFirst()) {
                 System.out.println("start");
                 do {
-                    Words allwords = new Words();
+                    Words allword = new Words();
                     String word = cursor.getString(cursor.getColumnIndex("word"));
                     String translation = cursor.getString(cursor.getColumnIndex("translation"));
                     String example = cursor.getString(cursor.getColumnIndex("example"));
                     String exampleTran = cursor.getString(cursor.getColumnIndex("exampleTran"));
-                    allwords.setWord(word);
-                    allwords.setTranslation(translation);
+                    allword.setWord(word);
+                    allword.setTranslation(translation);
                     if (example != null) {
-                        allwords.setExample(example);
+                        allword.setExample(example);
                     }
                     if (exampleTran != null) {
-                        allwords.setExampleTran(exampleTran);
+                        allword.setExampleTran(exampleTran);
                     }
-                    allWords.add(allwords);
+                    allWords.add(allword);
 
                 } while (cursor.moveToNext());
             }
             cursor.close();
             String[] expRe = new String[allWords.size()];
-            listsize = allWords.size();
             for (int i = 0; i < allWords.size(); i++) {
                 expRe[i] = allWords.get(i).getWord() + ":" + allWords.get(i).getTranslation();
             }
